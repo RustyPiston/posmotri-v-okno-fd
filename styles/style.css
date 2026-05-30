@@ -8,6 +8,20 @@ html {
   block-size: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -20,6 +34,8 @@ html {
 
 .page {
   display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -34,13 +50,11 @@ html {
   justify-self: center;
   align-self: center;
   width: 1140px;
-  height: 534px;
 }
 
 .title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -66,14 +80,19 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
   width: 711px;
-  height: 54px;
-  margin-top: 16px;
+  margin-top: 19px;
   display: flex;
   gap: 40px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
 }
 
 .search-form__fieldset {
@@ -93,9 +112,16 @@ input:focus {
 }
 
 .search-form__textfield {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
   background-color: transparent;
+  width: 225px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  margin-top: 5px;
 }
 
 .search-form__textfield::placeholder {
@@ -139,7 +165,8 @@ input:focus {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px
+  gap: 15px;
+  margin-top: 5px;
 }
 
 .search-form__pseudo-checkbox {
@@ -162,13 +189,11 @@ input:focus {
   opacity: 1;
 }
 
-
 .content__details {
   margin-left: 30px;
   width: 399px;
   height: 534px;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .content__list {
@@ -182,6 +207,7 @@ input:focus {
 }
 
 .content__list-container {
+  margin-top: 19px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -200,7 +226,6 @@ input:focus {
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
@@ -290,24 +315,11 @@ input:focus {
 .search-form__submit-button {
   justify-self: flex-end;
   flex-grow: 1;
+  align-self: flex-end;
 }
 
 .more-button {
   width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
 }
 
 ul,
